@@ -15,11 +15,11 @@ var testTodos = [{
   completedAt: 123
 }];
 
-beforeEach((done) => {
-  Todo.remove({}).then(() => {
-    return Todo.insertMany(testTodos);
-  }).then(() => done());
-});
+// beforeEach((done) => {
+//   Todo.remove({}).then(() => {
+//     return Todo.insertMany(testTodos);
+//   }).then(done);
+// });
 
 describe('POST /todos', () => {
   it('Should save new todo', (done) => {
