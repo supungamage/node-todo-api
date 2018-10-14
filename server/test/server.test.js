@@ -7,12 +7,14 @@ const {Todo} = require('./../models/todo');
 
 var testTodos = [{
   _id: new ObjectID(),
-  text: 'First test todo'
+  text: 'First test todo',
+  _creator: user1._id
 }, {
   _id: new ObjectID(),
   text: 'Second test todo',
   completed: true,
-  completedAt: 123
+  completedAt: 123,
+  _creator: user2._id
 }];
 
 // beforeEach((done) => {
